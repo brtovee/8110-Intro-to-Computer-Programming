@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Lab5 {
  public static void main(String[] args) {
+	 	//cariables
 		Scanner input = new Scanner (System.in);
 		double f = 0, s = 0, ans = 0;
 		String o = "";
@@ -9,10 +10,13 @@ public class Lab5 {
 
 		System.out.println("Simple calculator");
 		
+	 	//first number
 		System.out.print("First number:");
 		f = input.nextDouble();
 		
+	 	//operator
 		System.out.print("Please enter an operation: ");
+	 	//error checking to makes sure operator is valid
 		while(loop) {
 			o = input.next();
 			if(o.equals("+") || o.equals("-") || o.equals("/") || o.equals("*") || o.equals("%")) {
@@ -24,7 +28,9 @@ public class Lab5 {
 		}
 		System.out.print("Second number: ");
 	
+	 	//second number
 		loop = true;
+	 	//error checking to makes sure that you dont divide by 0
 		if(o.equals("/") || o.equals("%")) {
 			while(loop) {
 				s = input.nextDouble();
@@ -40,6 +46,7 @@ public class Lab5 {
 			s = input.nextDouble();
 		}
 		
+	 	//calculate answer depending on which operator was selected
 		if(o.equals("+")){
 			ans = f + s;
 		}
