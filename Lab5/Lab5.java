@@ -1,8 +1,10 @@
 import java.util.Scanner;
-
+/* Author Bruce Tovee
+* basic calculator with basic error checking
+*/
 public class Lab5 {
  public static void main(String[] args) {
-	 	//cariables
+	 	//variables
 		Scanner input = new Scanner (System.in);
 		double f = 0, s = 0, ans = 0;
 		String o = "";
