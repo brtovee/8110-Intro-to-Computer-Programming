@@ -1,14 +1,21 @@
 import java.util.Scanner;	//program uses class Scanner
-/*  Bruce Tovee
- * Class that allows the calculation of the difference between an inputed date and a set date
+/**  Created:		Mar 1st, 2018
+ *   Name:   		Bruce Tovee
+ *   Section: 		CST8110_303
+ *   Lab teacher:	Jason Mombourquette
+ *   Purpose:		OurDate Class for the use of DateCalculator
+ *   CST8110 Assignment 2 due Mar 16th, 2018
  */
 public class OurDate {
 	//instance variable
 	private int month;
 	private int day; 
 	private int year; 
-	Scanner input = new Scanner (System.in);
+	private Scanner input = new Scanner (System.in);
 	public OurDate() {
+		month = 0;
+		day = 0;
+		year = 0;
 		
 	}
 	public OurDate(int y, int m, int d) {

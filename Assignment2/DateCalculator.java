@@ -1,14 +1,25 @@
+/**  Created:		Mar 1st, 2018
+ *   Name:   		Bruce Tovee
+ *   Section: 		CST8110_303
+ *   Lab teacher:	Jason Mombourquette
+ *   Purpose:		Allows the user to input 2 dates and then recieve an output stating the 
+ *   				difference between the 2 dates
+ *   CST8110 Assignment 2 due Mar 16th, 2018
+ */
 public class DateCalculator {
-	private OurDate firstDate = new OurDate(); 
-	private OurDate secondDate = new OurDate();
-	private String message;
+	private OurDate firstDate; 
+	private OurDate secondDate;
+	private String message; // String to display the difference between the 2 dates
 
 	public DateCalculator() { //default constructor
-		System.out.println("Date Calculator - it's all relative");
+		System.out.println("Date Calculator - it's all relative\n");
+		secondDate = new OurDate();
+		firstDate = new OurDate(); 
 	}
 	public void inputDates() {  //getting 2 dates from use
+		System.out.println("Enter first date");
 		this.inputDate(firstDate);
-		System.out.print("\n");
+		System.out.println("\nEnter second date");
 		this.inputDate(secondDate);
 	}
 	private void inputDate(OurDate date) { //get date values for date
@@ -89,6 +100,7 @@ public class DateCalculator {
 
 	}
 	public void display() { // displays 2 dates and the difference
+		System.out.print("\n");
 		firstDate.displayDate();
 		System.out.print(message);
 		secondDate.displayDate();
